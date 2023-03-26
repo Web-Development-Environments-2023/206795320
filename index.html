@@ -1,181 +1,432 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+  <style>
+    /* Style 9
+    ----------------------------- */
+    .nine h1 {
+        text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
+        font-family:"Playfair Display", serif; font-weight:400;
+    }
+    .nine h1 span {
+        margin-top: 5px;
+        font-size:30px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+        text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-rows: 27px 0;
+        grid-gap: 20px;
+        align-items: center;
+    }
+
+    .nine h1 span:after,.nine h1 span:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #faf1dafc;
+        border-top: 1px solid #faf1dafc;
+        height: 5px;
+        /* background-color:#f8f8f8; */
+    }
+</style>
+<title>My Grandparents Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-amber.css">
+<!-- Styles for the top toolbar -->
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+    .snip1226 {
+        font-family: 'Raleway', Arial, sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 20px;
+        background-color: #faf1dafc;
+        position: fixed; /* Fix the position */
+        top: 0; /* Set the distance from the top of the page */
+        width: 100%; /* Set the width to 100% */
+        overflow: hidden;
+        z-index: 9998;
+        margin: 0;
+        padding: 0;
+    }
+    .snip1226 * {
+        box-sizing: border-box;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+    }
+    .snip1226 li {
+        display: inline-block;
+        list-style: outside none none;
+        margin: 0 1.5em;
+        overflow: hidden;
+    }
+    .snip1226 a {
+        padding: 0.3em 0;
+        color: rgba(12, 12, 12, 0.765);
+        position: relative;
+        display: inline-block;
+        letter-spacing: 1px;
+        margin: 0;
+        text-decoration: none;
+    }
+    .snip1226 a:before,
+    .snip1226 a:after {
+        position: absolute;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+    }
+    .snip1226 a:before {
+        bottom: 100%;
+        display: block;
+        height: 3px;
+        width: 100%;
+        content: "";
+        background-color: #ee2213c4;
+    }
+    .snip1226 a:after {
+        padding: 0.3em 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        content: attr(data-hover);
+        color: rgb(12, 12, 12);
+        white-space: nowrap;
+    }
+        .snip1226 li:hover a,
+        .snip1226 .current a {
+        transform: translateY(100%);
+    }
+    /* Demo purposes only */
+    body {
+        background-color: #212121;
+    }
+</style>
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+<link rel="stylesheet" type="text/css" href="C:\Users\assaf\github-classroom\Web-Development-Environments-2023\206795320\style.css">
+<style>
+    body {
+        background-image: url("C:/Users/assaf/github-classroom/Web-Development-Environments-2023/206795320/img/marocco_background2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: 100px;
+    }
+    #logo{ 
+        position:fixed; 
+        top:0; 
+        left:0; 
+        z-index: 9999;
+    } 
+</style>
+<div id="logo"> 
+    <img src="C:\Users\assaf\github-classroom\Web-Development-Environments-2023\206795320\img\fez_logo.png" width="80" height="80"> 
+</div> 
+<!-- Top toolbar -->
+<ul class="snip1226">
+    <li><a href="#about-us" data-hover="About Us">About Us</a></li>
+    <li><a href="#our-photos" data-hover="Our Photos">Our Photos</a></li>
+    <li><a href="#our-playlist" data-hover="Our Playlist">Our Playlist</a></li>
+    <li><a href="#like" data-hover="Like">Like</a></li>
+    <li><a href="#qr-code" data-hover="QR code">QR code</a></li>
+    <li><a href="#q-and-a" data-hover="Q&A">Q&A</a></li>
+    <li><a href="#contact-us" data-hover="Contact Us">Contact Us</a></li>
+</ul>
+
+<!-- Main content -->
+<div class="nine">
+    <h1>My Grandparents</h1>
+    <br>
+    <br>
 </div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+<!-- <h1 style="text-align: center;">My Grandparents</h1> -->
+
+<section>
+<style>
+    h2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 50px;
+        position:relative; 
+    }
+    h2 span{ 
+        position:absolute;
+        top:-200px;
+    }
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: right;
+        direction: rtl;
+        display: flex;
+        justify-content: right;
+        margin: 0 20px; /* decrease right and left margin */
+
+    }
+    #our-playlist, #like {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>
+<div class="nine">
+    <h1><span>About Us</span></h1>
+    <h2><span id="about-us"></span></h2>
+</div>
+  <p dir="rtl">סבי דוד דהן בן אברהם דהן וסולטנה למשפחת בוחבוט נולד בשנת 1926 בעיר דימנאת שלמרגלות הרי האטלס דרומית לעיר מרקש. </p>
+  <p dir="rtl">סבתי מרים בת שרה (לבית סבאג) ובת עמרם לבית ברביבאי, נולדה גם היא בעיר דימנאת בשנת 1934 בעת ביקורה של אמה בעיירה לצורך חתונת אחיה. גדלה בעיר סטאט שבמרוקו. לימים חזרה עם אמה לעיר דימנאת לאחר מות אביה ושם הכירה את סבי והם התחתנו בעיר מרקש בשנת 1947. </p>
+  <p dir="rtl">הם בנו את ביתם בעיר דימנאת ונולדו להם שלושה ילדים: עמרם , אליהו ומרדכי. סבא התפרנס מתפירה והכנת נעליים וסבתא עזרה בפרנסה בתפירה וסריגה. </p>
+  <p dir="rtl">בשנת 1955 עלו לישראל עם שלושת ילדיהם מטעמי ציונות והותירו שם את משפחתם המורחבת. הם הגיעו למעברת משואה ליד בית גוברין ושוכנו בצריף פח. הקליטה היתה קשה מאוד ותנאי המחיה קשים מאוד. </p>
+  <p dir="rtl">לימים עברו למעברת גן יבנה ולאחר מכן לבתי קבע בגן יבנה. סבי התפרנס מעבודת תחזוקה בבסיס חצור הסמוך לגן יבנה וסבתי עזרה בעבודות מזדמנות כמו קטיף ונקיון. </p>
+  <p dir="rtl">בארץ נולדו להם עוד שישה ילדים: אברהם, שרה, מאיר, שמעון, שושי ועמי. </p>
+  <p dir="rtl">בשנת 1969 שכלו את בנם הבכור עמרם בתאונת אימונים של חטיבת גולני. למרות המשבר הקשה בחייהם השתקמו וגידלו את ילדיהם, דאגו לפרנסתם ולחינוכם מקטן ועד גדול. </p>
+  <p dir="rtl">כיום מתגוררים עדיין בגן יבנה מוקפים במשפחה אוהבת ותומכת וזכו לנכדים ולנינים רבים. </p>
+  <br><br>
 </section>
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+<br>
+<br>
+<section>
+    <div class="nine">
+        <h1><span>Our Photos</span></h1>
+        <h2><span id="our-photos"></span></h2>
+    </div>
+  <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        <img src="C:\Users\assaf\github-classroom\Web-Development-Environments-2023\206795320\img\pic7.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+        <img src="C:\Users\assaf\github-classroom\Web-Development-Environments-2023\206795320\img\pic2.jpg" style="width:100%;">
+        </div>
+    
+        <div class="mySlides fade">
+        <img src="C:\Users\assaf\github-classroom\Web-Development-Environments-2023\206795320\img\pic3.jpg" style="width:100%;">
+        </div>
+
+        <div class="mySlides fade">
+        <img src="C:\Users\assaf\github-classroom\Web-Development-Environments-2023\206795320\img\pic4.jpg" style="width:100%;">
+        </div>
+    
+        <div class="mySlides fade">
+        <img src="C:\Users\assaf\github-classroom\Web-Development-Environments-2023\206795320\img\pic5.jpg" style="width:100%;">
+        </div>
+            
+        <div class="mySlides fade">
+        <img src="C:\Users\assaf\github-classroom\Web-Development-Environments-2023\206795320\img\pic8.jpg" style="width:100%;">
+        </div>
+
+        <div class="mySlides fade">
+        <img src="C:\Users\assaf\github-classroom\Web-Development-Environments-2023\206795320\img\pic6.jpg" style="width:100%;">
+        </div>
+
+        <div class="mySlides fade">
+        <img src="C:\Users\assaf\github-classroom\Web-Development-Environments-2023\206795320\img\pic10.jpg" style="width:100%;">
+        </div>  
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
+    <script src="C:\Users\assaf\github-classroom\Web-Development-Environments-2023\206795320\photos_slider.js"></script>
 </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+<br><br><br><br><br><br><br><br><br>
+
+<div class="nine">
+    <h1><span>Our Playlist</span></h1>
+    <h2><span id="our-playlist"></span></h2>
+</div>
+<section id="our-playlist">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WVxwqTrHC1E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </section>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
+<br><br><br><br><br><br><br><br><br>
+
+<div class="nine">
+    <h1><span>Like</span></h1>
+    <h2><span id="like"></span></h2>
+</div>
+<section id="like">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v16.0" nonce="03C9fTdl"></script>
+    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="200" data-layout="" data-action="" data-size="" data-share="true"></div>
 </section>
 
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
+<br><br><br><br><br><br><br><br><br>
+
+<section>
+    <div class="nine">
+        <h1><span>QR Code</span></h1>
+        <h2><span id="qr-code"></span></h2>
+    </div>
 </section>
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
+<br><br><br><br><br><br><br><br><br>
+
+<section>
+    <div class="nine">
+        <h1><span>Q & A</span></h1>
+        <h2><span id="q-and-a"></span></h2>
+    </div>
+    <style>
+        .ques{
+            text-align: center;
+        }
+
+        table {
+            border: 1px solid white;
+            border-collapse: collapse;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        th, td {
+            border: 1px solid white;
+            border-collapse: collapse;
+            padding: 15px;
+        }
+    </style>           
+    <h3 style="text-align: center;" dir="rtl"><b>שאלה:</b> מנה שלוש הבדלים עיקריים המבדילים בין Web 1.0, Web 2.0, Web 3.0</h3>
+    <i>
+        <h4 style="text-align: center;" dir="rtl">תשובה:</h4>
+        <table style="margin-left: auto; margin-right: auto; width: 70% " dir="rtl">
+        <!-- <tr class="title-table"> -->
+        <tr class="w3-container w3-theme w3-card">
+            <!-- <th></th> -->
+            <th>Web 1.0</th>
+            <th>Web 2.0</th>
+            <th>Web 3.0</th>
+        </tr>
+        <tr class="w3-theme-l4">
+            <th class="w3-container w3-theme w3-card">תוכן</th>
+            <td>התוכן הוא לקריאה בלבד ומוצג באופן סטטי</td>
+            <td>התוכן ניתן לקריאה ולכתיבה, והתוכן בו דינאמי</td>
+            <td>גם לקריאה ולכתיבה, אבל בנוסף התוכן מותאם אישית למשתמש</td>
+        </tr>
+        <tr class="w3-theme-l3">
+            <th class="w3-container w3-theme w3-card">מטרה</th>
+            <td>המטרה העיקרית הייתה לספק אינפורמציה באופן מקוון</td>
+            <td>התבסס על שיתוף ידע ואיפשור אינטראקציה חברתית ופעילות יומיומית</td>
+            <td>הביא את עניין הקישוריות בין המידע שבאינטרנט, שיתוף ידע ומידע מקושר</td>
+        </tr>
+        <tr class="w3-theme-l4">
+        <th class="w3-container w3-theme w3-card">חיפוש</th>
+            <td>החיפוש מציג תוצאות מהירות, אבל לא תמיד מדוייקות, והתוכן שמוצג הוא מאקרו</td>
+            <td>כולל מנועי חיפוש שמחזירים תגיות עם תוכן מיקרו</td>
+            <td>החיפוש מדוייק יותר, מותאם אישית, ומשתמש באמצעיים טכנולוגיים כדוגמת בינה מלאכותית כדי לנתח את כוונת המשתמש בשאילתה</td>
+        </tr>
+        </table>
+    </i>
+    <br/><br/>
+    <h3 style="text-align: center;" dir="rtl"><b>שאלה:</b> הצג את ההבדלים בעזרת דוגמה</h3>
+    <i>
+        <h4 style="margin-right: 40%;" style="text-align: center;" dir="rtl">תשובה:</h4>
+        <table style="margin-left: auto; margin-right: auto; width: 30%" dir="rtl">
+        <tr class="w3-container w3-theme w3-card">
+            <th colspan="2">נציג דוגמה בה המשתמש כותב את השאילתא "1+1" במנוע החיפוש:</th>
+        </tr>
+        <tr class="w3-theme-l4">
+            <th class="w3-container w3-theme w3-card">Web 1.0</th>
+            <td>ב-web1 יוצגו רק אתרים שבעליהם תייגו את השאילתא "1+1". </td>
+        </tr>
+        <tr class="w3-theme-l3">
+            <th class="w3-container w3-theme w3-card">Web 2.0</th>
+            <td> ב-web2 כנראה ויוצג מחשבון עם השאילתא או שיוצג הפתרון, וכן אתרים אחרים שקשורים.</td>
+        </tr>
+        <tr class="w3-theme-l4">
+            <th class="w3-container w3-theme w3-card">Web 3.0</th>
+            <td> ב-web3 כנראה שיוצא למשתמש גם את אתר תאגיד השידור "כאן" שמשתמש בסלוגן הזה לפרסום. כלומר השתמשו בבינה מלאכותית כדי להבין את כוונת המשתמש והציגו לא את התוכן שמותאם לו אישית.</td>
+        </tr>
+        </table>
+        <br/>
+    </i>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 </section>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
+<section>
+    <div class="nine">
+        <h1><span>Contact Us</span></h1>
+        <h2><span id="contact-us"></span></h2>
+    </div>
+    <style>
+        form {
+            max-width: 600px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 auto;
+        }
+        
+        label {
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        
+        input[type="text"], textarea {
+          width: 600px;
+          padding: 10px;
+          margin-bottom: 20px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+        
+        select {
+          margin-bottom: 20px;
+        }
+        
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 40px; /* Adjust the padding here */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px; /* Add some margin to separate from the textarea */
+            margin-bottom: 60px;
+        }
+        textarea {
+            width: 600px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+    <form>
+        <label for="email">Your Email:</label>
+        <input type="text" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <script>
+            $('#message').emojioneArea({
+                pickerPosition: 'top'
+            });
+        </script>
+        <button type="submit">Send</button>
+    </form>
+    <script src="C:\Users\assaf\github-classroom\Web-Development-Environments-2023\206795320\email.js"></script>
 </section>
-
-
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
